@@ -7,8 +7,7 @@ labels = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", 
           "boat", "traffic sign", "fire hydrant", "none", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "girrafe", "none", "backpack", "umbrella", "none", "none", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "none", "whine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "brocoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair", "couch", "potted plant", "bed", "none", "dinning table", "none", "none", "toilet", "none", "tv", "laptop", "mouse", "remote", "keyboard", "cell phone", "microvave", "oven", "toaster", "sink", "refrigerator", "none", "book", "vase", "teddy bear", "hair drier", "toothbrush", "none"]
 graph = tf.Graph()
 graph_def = tf.compat.v1.GraphDef()
-detect_fn = tf.saved_model.load(
-    "faster_rcnn_resnet152_v1_640x640_coco17_tpu-8/saved_model")
+detect_fn = tf.saved_model.load("extremenet")
 cap = cv2.VideoCapture(0)
 
 
